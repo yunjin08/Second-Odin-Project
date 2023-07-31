@@ -1,0 +1,63 @@
+.leftContainer img {
+    height: 2.5rem;
+}
+
+.maindashBoard{
+    display: flex;
+    flex-basis: 10vh;
+    margin-left: 1.5vw;
+    font-weight: 700;
+    font-size: 2.3vw;
+    transition: 0.15s;
+}
+
+.maindashBoard:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.maindashBoard > div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    column-gap: 0.5vw;
+}
+
+.subdashBoard1{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20vh;
+    margin-left: 1.5vw;
+    row-gap: 2.5vh;
+    font-weight: 500;
+    font-size: 1.1vw;
+    text-shadow: 2px 2px 4px black;
+}
+
+.subdashBoard2{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1vh;
+    margin-left: 1.5vw;
+    row-gap: 2.5vh;
+    font-weight: 500;
+    font-size: 1.1vw;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+.subdashBoard1 > div, .subdashBoard2 > div{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    column-gap: 1.2vw;
+    transition: 0.15s;
+}
+
+.subdashBoard1 > div:hover,
+.subdashBoard2 > div:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}

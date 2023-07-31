@@ -1,0 +1,71 @@
+.mainContent{
+    display: grid;
+    max-width: 55vw;
+    height: 125vh;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+    
+}
+
+.mainContainer h3 {
+    padding: 1vh 0vh 0vh 2.2vw;
+    margin-bottom: 0px;
+    font-size: 1.4vw;
+}
+
+.mainContent > div{
+    display: grid;
+    grid-template-columns: 1vw 1fr;
+    border: 2px solid #bbf7d0;
+    border-radius: 1vw;
+    overflow: hidden;
+    transition: 0.15s;
+    transition: 0.15s;
+}
+
+.mainContent > div:hover{
+    transform: scale(1.06);
+}
+
+.mainContent p,
+.mainContent h2{
+    margin-top: 1.5vw;
+    padding-left: 1.2vw;
+    padding-right: 0.5vw;
+    font-size: 1.1em;
+}
+
+.mainContent > div > div:nth-child(1){
+    background-color: #86efac;
+}
+
+.mainContent > div > div:nth-child(2){
+    position: relative; 
+}
+
+.toggleBar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 3vh;
+    column-gap: 1vw;
+    right: 3vh;
+}
+
+.toggleBar img {
+    cursor: pointer;
+    width: 2.2vw;
+}
+
+@media(max-width: 768px) {
+    .mainContent {
+        grid-template-columns: 1fr; 
+        max-width: 100%; 
+    }
+}
+
+
+
